@@ -1,32 +1,19 @@
-am not really good with git just assuming i am doing it the right way
-//the below code should do the thing required
-its in C++
+###modified the code to python
 
-#include<bits/stdc++.h>
-using namespace std;
-///this is the point where the function begins
 
-void calculate(int x, int y){
-	
-	int ans=(x*(x+1))/2;
-	int ans2=(y*(y+1))/2;
-	int ans3=(x<y)?x:y;
-	int ans4=ans-ans2;
-	if(ans4<-1){
-		ans4*=-1;
-	}
-	
-	cout<<ans3+ans4<<endl;	
-}
+def cal(x, y):
+    ans=(x*(x+1))/2
+    ans2=(y*(y+1))/2
+    ans3=x<y and x or y
+    ans4=ans-ans2
+    if(ans4<-1):
+        ans4*=-1
+    print(ans3+ans4)
 
-///this is where the function terminates
 
-int main (){
-	
+    
+    
+x = int(input())
+y = int(input())
 
-	int x, y;
-	cin>>x>>y;
-	calculate(x, y);
-	
-	return 0;
-}
+cal(x, y)
